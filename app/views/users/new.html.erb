@@ -6,9 +6,16 @@
 <!--  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">-->
 <!--</form> -->
 
-<%= form_tag('/users') do %>
-Username: <div><%= text_field_tag 'username' %></div>
-Email: <div><%= email_field_tag 'email' %></div>
-Password: <div><%= password_field_tag 'password' %></div>
-Submit: <div><%= submit_tag 'submit' %></div>
-<% end %>
+<!-- <%= form_tag('/users') do %>-->
+<!-- Username: <div><%= text_field_tag 'username' %></div>-->
+<!-- Email: <div><%= email_field_tag 'email' %></div>-->
+<!-- Password: <div><%= password_field_tag 'password' %></div>-->
+<!-- Submit: <div><%= submit_tag 'submit' %></div>-->
+<!-- <% end %>-->
+
+<%= form_for :users do |f| %>
+    Username: <%= f.text_field :username %><br /><br>
+    Email : <%= f.email_field :email %><br /><br>
+    Password : <%= f.password_field :password %><br /><br>
+    Submit    : <%= f.submit :submit %><br />
+  <% end %>
