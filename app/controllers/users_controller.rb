@@ -15,6 +15,19 @@ def create
   end
 end
 
+def edit
+  @user = User.find(params[:id])
+end
+
+def update
+  @user = User.find(params[:id])
+  
+  if @user.update
+    redirect_to new_user_path
+  else
+    render :edit
+end
+
 private
 
 def user_params
