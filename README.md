@@ -83,3 +83,7 @@ We got the chance to actually build some forms, both using nearly-pure HTML and 
 [Odin Project](https://www.theodinproject.com/courses/ruby-on-rails/lessons/forms)
 
 [Michael Hartl](https://www.learnenough.com/ruby-on-rails-4th-edition-tutorial/sign_up)
+
+[Odin Project](https://www.theodinproject.com/courses/ruby-on-rails/lessons/controllers)
+
+[StackOverflow](https://stackoverflow.com/questions/57319122/no-route-matches-post-users-new)
