@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   post  'users/new', to: "users#new"
 
-  resources :users, only: [:new, :create]
+  get 'users/edit', to: "users#edit"
+
+  resources :users, only: [:new, :create, :edit, :update]
 
 end
